@@ -85,23 +85,42 @@ Mini HDMI cables.
 
 Within the browser view of Proxmox we can see a lot of options. 
 
-(Expansion will be here)
+![Proxmox Left Side Initial](https://github.com/user-attachments/assets/5c4e49be-9c55-4eb1-a08a-fe861e70a1f1)
 
-for now lets route to the left side of the screen under "Datacenter" and we will see a sub category, called, "pve". 
-Within that we will see a series of options depending on your network setup. 
-What we want to look at is local (pve) here you will see an option called "ISO images". 
-When we click on that we will see an option to "Download from URL" 
-    
-(Expansion will be here)
+for now lets route to the left side of the screen under "Datacenter", Below that we will see, 
+"pve" with an option to expand. It's likely that you will see three subjects within the pve category.
+"localnetwork (pve)"
+"local (pve)"
+"local-lvm (pve)"
+
+![localnetwork local local-lvm](https://github.com/user-attachments/assets/8336841e-2799-4ed5-a9d6-c7400011ecfb)
+
+If we highlight, "local (pve)" 
+here you will see an option called "ISO images". 
+
+![ISO Images](https://github.com/user-attachments/assets/a555702c-b37a-48c5-b14b-74409c780937)
+
+When we click on that we will see an option to "Download from URL"  
+
+![download from URL](https://github.com/user-attachments/assets/83c06d1b-4f09-4f91-831b-677c0390c8c2)
+
+as a decent starting point, we may as well grab a debian 12 iso Download
 
 ## Starting out with Some OS's ##
 
-    
-    
-    
+I went to [Debian](https://www.debian.org/) 
+
+If you right click on the "Download" button, you can see the option to Copy Link.
+![Debian Download](https://github.com/user-attachments/assets/edc58ae4-6442-4f2c-bdd8-a523348fc7de)
+
+Remember that box from before? Now we have a url that we can paste into this box to query for a URL
+
+![Debian URL Query](https://github.com/user-attachments/assets/0643596c-9eaf-4a1c-babf-8db236dc576b)
 
 The next step will be...
 
+
+## Making Some LxCs
 -Hardening
 -Firewall
 -Adblock
