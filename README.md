@@ -119,7 +119,7 @@ When we click on that we will see an option to "Download from URL"
 
 ![download from URL](https://github.com/user-attachments/assets/83c06d1b-4f09-4f91-831b-677c0390c8c2)
 
-As a decent starting point, we may as well grab a debian 12 iso Download
+As a decent starting point, we may as well grab a Debian 12 ISO Download
 
 ## Starting out with Some OS's ##
 
@@ -133,22 +133,63 @@ Remember that box from before? Now we have a url that we can paste into this box
 
 ![Debian URL Query](https://github.com/user-attachments/assets/0643596c-9eaf-4a1c-babf-8db236dc576b)
 
+Now we can download straight from the source.
+
 ---
 
 ## Making Some Containers ##
--Hardening
--Firewall
--Adblock
--Wireguard
--VPN
--Virtual Machines
 
-Within the browser view of Proxmox we can see a lot of options. 
+Alright, so this is where things get pretty fun. There is an incredible resource. 
 
-(Expansion will be here)
+[Proxmox Scripts](https://community-scripts.github.io/ProxmoxVE/)
 
-for now lets route to the left side of the screen under "Datacenter" and we will see a sub category, called, "pve". within that we will see a series of options depending on your network setup. What we want to look at is local (pve) here you will see an option called "ISO images". When we click on that we will see an option to "Download from URL" 
+Click "View Scripts"
+
+![Proxmox VE Scripts](https://github.com/user-attachments/assets/eb7f432f-0dd4-41bd-ab56-c8285039c38c)
+
+We have, so many options here. But, Im going to just walk you through one for now.
+
+[Heimdall](https://community-scripts.github.io/ProxmoxVE/scripts?id=heimdall-dashboard)
+
+![Heimdall](https://github.com/user-attachments/assets/45252864-3ad2-4db7-94ff-a92698b095e8)
+
+Click back into your Proxmox page, and click "pve" you'll see a list of options 
+- Search
+- Summary
+- Notes
+- Shell
+- System
+- Updates
+- Firewall
+- Disks
+- Ceph
+- Replication
+- Task History
+- Subscription
+
+If you hit shell it will open up a terminal.
+
+![Proxmox Terminal](https://github.com/user-attachments/assets/e9d43989-39b4-417e-a544-5106e2f4f175)
+
+and Press Ctrl+Shift+v 
+and the script will populate 
+
+![Script Population](https://github.com/user-attachments/assets/2bdbf4c0-4473-4a7d-b649-8730bfeaf46c)
+
+If you slap enter, it will run the script and create a Heimdall instance. And when it starts running, it will provide you with an ip address.
+![Heimdall IP](https://github.com/user-attachments/assets/6505c80a-85d8-4fbb-8f95-f6332cb1a44d)
+
+Lets go to that IP Address
+It should look like this,
+
+![Heimdall Splash Page](https://github.com/user-attachments/assets/d309c634-f3d4-40c7-b8bb-eacf9700ccef)
 
 
-(Expansion will be here)
 
+
+- Hardening
+- Firewall
+- Adblock
+- Wireguard
+- VPN
+- Virtual Machines
