@@ -177,6 +177,7 @@ and the script will populate
 ![Script Population](https://github.com/user-attachments/assets/2bdbf4c0-4473-4a7d-b649-8730bfeaf46c)
 
 If you slap enter, it will run the script and create a Heimdall instance. And when it starts running, it will provide you with an ip address.
+
 ![Heimdall IP](https://github.com/user-attachments/assets/6505c80a-85d8-4fbb-8f95-f6332cb1a44d)
 
 Lets go to that IP Address
