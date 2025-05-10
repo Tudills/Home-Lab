@@ -3,6 +3,60 @@
 
 ---
 
+# Hardware Requirements #
+## This is just a list as we go forward that I will be using. ##
+## I'll be updating this list as things go along ##
+- A Laptop, Desktop... your primary computuing device.
+- A secondary Computer. This could be an old desktop, A mini PC, or a Raspberry Pi, etc.
+- A networking Switch or a way to have multiple connections to ensure that your computer is networked to what will be your proxmox box.
+- A Flash drive, I'd suggest something along the lines of 8 GB
+
+## Somethings to note before you get anything started ##
+* So as a practical application of understanding how virtualization works, take a note of what your proxmox Specifications are,
+* How many cores can the CPU utilize? What is the amount of RAM the computer has in it. What is the size of the harddrive.
+* Additionally what are the speeds of each of those devices?
+* While containers do end up being a very effective way to cap the amount of resources a certain application can use
+* You might start to see these applications add up very quickly.
+
+
+# Proxmox Installation #
+
+First go to 
+[Proxmox](https://proxmox.com/en/)
+and click the downloads icon at the top of the page
+
+![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
+
+the first option is Proxmox VE Installer. It is the one we will be choosing. 
+But Keep in mind the Proxmox Backup Server ISO. I think we will be using it later.
+
+![Proxmox Choices](https://github.com/user-attachments/assets/156fc1d8-7735-4673-ad32-3ddab235f6e3)
+
+You can choose direct download or torrent. 
+
+While that starts downloading, lets go to 
+[balenaEtcher](https://etcher.balena.io/)
+and there is a link right in the middle of the screen to "Download Etcher"
+
+![balenaEtcher page](https://github.com/user-attachments/assets/c9800da4-784d-461c-bced-2f0a85f7a97c)
+
+Go ahead and download balenaEtcher.
+After Proxmox has finished downloading, we can go ahead and install and use balenaEtcher. 
+Grab a flash drive that is larger than the ISO file we downloaded (2 Gig or higher most likely)
+Balena Etcher will look like this.
+
+![balenaEtcher in action](https://github.com/user-attachments/assets/a9e11632-fe02-4e7b-8491-f5f462817c10)
+
+You'll click "Flash from File" Navigate to the ISO image you just downloaded and select it. 
+It will automatically move to the next step of the process where you select the drive
+that you will be imaging to. Which is where you will be selecting the Flash drive that is higher
+than 2 Gigs. And then we can click "Flash!"
+
+When it is finished, your computer may give you an error that says that the flash drive
+is unuasable. Which makes sense. We just made a bootable media. an installation disk if you will.
+Eject it from your pc and grab your secondary PC that will be made into the Proxmox box.
+
+
 ## The Process ##
 First thing is first. Proxmox does not have a GUI. 
 In order for me to have everything be integrated, I used a raspberry pi loaded with NOOBS and installed a regular       
