@@ -1,0 +1,80 @@
+
+root@pve:~# wget https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip
+--xxxxxxx--  https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip
+Resolving sourceforge.net (sourceforge.net)... xxxxxxx, ...
+Connecting to sourceforge.net (sourceforge.net)|xxxxxxx... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/ [following]
+--xxxxxxx--  https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/
+Reusing existing connection to sourceforge.net:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/download [following]
+--xxxxxxx--  https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/download
+Reusing existing connection to sourceforge.net:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://downloads.sourceforge.net/project/metasploitable/Metasploitable2/metasploitable-linux-2.0.0.zip?ts=gAAAAABoOR_YhhOJp9Av8Jc4cOaN8jQwTDNYgKu_8NxYh_7xXKxSrLg9in9d-PRSaWoUOnx4sJIVp8ylUfcWo4WBf1SiNZKgCg%3D%3D&use_mirror=cfhcable&r= [following]
+--xxxxxxx--  https://downloads.sourceforge.net/project/metasploitable/Metasploitable2/metasploitable-linux-2.0.0.zip?ts=gAAAAABoOR_YhhOJp9Av8Jc4cOaN8jQwTDNYgKu_8NxYh_7xXKxSrLg9in9d-PRSaWoUOnx4sJIVp8ylUfcWo4WBf1SiNZKgCg%3D%3D&use_mirror=cfhcable&r=
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... xxxxxxx, ...
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)xxxxxxx... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://cfhcable.dl.sourceforge.net/project/metasploitable/Metasploitable2/metasploitable-linux-2.0.0.zip?viasf=1 [following]
+--xxxxxxx--  https://cfhcable.dl.sourceforge.net/project/metasploitable/Metasploitable2/metasploitable-linux-2.0.0.zip?viasf=1
+Resolving cfhcable.dl.sourceforge.net (cfhcable.dl.sourceforge.net)... xxxxxxx
+Connecting to cfhcable.dl.sourceforge.net (cfhcable.dl.sourceforge.net)xxxxxxx... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 865084584 (825M) [application/octet-stream]
+
+Saving to: ‘metasploitable-linux-2.0.0.zip’
+
+metasploitable-linux-2.0.0.zip                              100%[=========================================================================================================================================>] 825.01M  32.3MB/s    in 25s     
+
+xxxxxxx (33.0 MB/s) - ‘metasploitable-linux-2.0.0.zip’ saved [865084584/865084584]
+
+root@pve:~# unzip metasploitable-linux-2.0.0.zip
+-bash: unzip: command not found
+root@pve:~# apt-get install unzip
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 42 not upgraded.
+Need to get 166 kB of archives.
+After this operation, 388 kB of additional disk space will be used.
+Get:1 xxxxxxx
+Fetched 166 kB in 0s (473 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 68942 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-28_amd64.deb ...
+Unpacking unzip (6.0-28) ...
+Setting up unzip (6.0-28) ...
+Processing triggers for mailcap (3.70+nmu1) ...
+Processing triggers for man-db (2.11.2-2) ...
+root@pve:~# unzip metasploitable-linux-2.0.0.zip
+Archive:  metasploitable-linux-2.0.0.zip
+   creating: Metasploitable2-Linux/
+  inflating: Metasploitable2-Linux/Metasploitable.nvram  
+  inflating: Metasploitable2-Linux/Metasploitable.vmdk  
+ extracting: Metasploitable2-Linux/Metasploitable.vmsd  
+  inflating: Metasploitable2-Linux/Metasploitable.vmx  
+  inflating: Metasploitable2-Linux/Metasploitable.vmxf  
+root@pve:~# ls
+install-debuntu.sh  Metasploitable2-Linux  metasploitable-linux-2.0.0.zip
+root@pve:~# cd Metasploitable2-Linux/
+root@pve:~/Metasploitable2-Linux# qemu-img convert -O qcow2 Metasploitable.vmdk metasploitable.qcow2
+root@pve:~/Metasploitable2-Linux# qm create 300 --memory 2048 --cores 2 --name Metasploitable2 --net0 virtio,bridge=vmbr0 --boot c --bootdisk ide0
+root@pve:~/Metasploitable2-Linux# qm importdisk 300 metasploitable.qcow2 local-lvm
+importing disk 'metasploitable.qcow2' to VM 300 ...
+  Logical volume "vm-300-disk-0" created.
+transferred 0.0 B of 8.0 GiB (0.00%)
+transferred 83.6 MiB of 8.0 GiB (1.02%)
+...
+transferred 8.0 GiB of 8.0 GiB (99.45%)
+transferred 8.0 GiB of 8.0 GiB (100.00%)
+transferred 8.0 GiB of 8.0 GiB (100.00%)
+unused0: successfully imported disk 'local-lvm:vm-300-disk-0'
+root@pve:~/Metasploitable2-Linux# qm set 300 --ide0 local-lvm:vm-300-disk-0
+update VM 300: -ide0 local-lvm:vm-300-disk-0More actions
+root@pve:~/Metasploitable2-Linux# 
