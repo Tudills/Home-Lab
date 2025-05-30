@@ -1,3 +1,5 @@
+I followed this link:
+https://forum.proxmox.com/threads/metasploitable2.126195/
 
 root@pve:~# wget https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip
 --xxxxxxx--  https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip
