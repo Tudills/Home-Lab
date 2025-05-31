@@ -70,16 +70,6 @@ Eject it from your pc and grab your secondary PC that will be made into the Prox
 
 </details>
 
-## The Process ##
-First thing is first. Proxmox does not have a GUI. 
-In order for me to have everything be integrated, I used a raspberry pi loaded with NOOBS and installed a regular       
-installation of Debian. I installed it on a 8 Gig microSD. The only thing this Pi will be doing, 
-is acting as the GUI for Proxmox. The patch panel is directly connected to the switch. 
-At some point im probably going to remove the switch from the front of the rack. 
-I labeled each of the patch panels to indicate each port of the switch. 1-8. 
-I then plugged in my pi into the 12th port so i could use patch ethernet to quickly plug it or unplug it into other devices. 
-I did the same thing with my eero, and the proxmox box.
-
 ---
 
 ## Opening up Proxmox ##
