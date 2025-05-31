@@ -74,7 +74,8 @@ Eject it from your pc and grab your secondary PC that will be made into the Prox
 ---
 
 ## Opening up Proxmox ##
-
+<details>
+      <summary> Opening Proxmox </summary>
 Within the browser view of Proxmox we can see a lot of options. 
 
 ![Proxmox Left Side Initial](https://github.com/user-attachments/assets/5c4e49be-9c55-4eb1-a08a-fe861e70a1f1)
@@ -97,7 +98,7 @@ When we click on that we will see an option to "Download from URL"
 ![download from URL](https://github.com/user-attachments/assets/83c06d1b-4f09-4f91-831b-677c0390c8c2)
 
 As a decent starting point, we may as well grab a Debian 12 ISO Download
-
+</details>
 ## Starting out with Some OS's ##
 
 I went to [Debian](https://www.debian.org/) 
