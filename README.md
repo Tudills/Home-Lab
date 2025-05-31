@@ -4,7 +4,7 @@
 ---
 
 # Hardware Requirements #
-## This is just a list as we go forward that I will be using. ##
+## This is just a guide that I will be documenting as we go forward. ##
 ## I'll be updating this list as things go along ##
 - A Laptop, Desktop... your primary computuing device.
 - A secondary Computer. This could be an old desktop, A mini PC, or a Raspberry Pi, etc.
@@ -18,6 +18,13 @@
 * While containers do end up being a very effective way to cap the amount of resources a certain application can use
 * You might start to see these applications add up very quickly.
 
+Main Sources:
+[Proxmox](https://proxmox.com/en/)
+[balenaEtcher](https://etcher.balena.io/)
+[Proxmox Scripts](https://community-scripts.github.io/ProxmoxVE/)
+[Debian](https://www.debian.org/) 
+[Metasploitable2](https://www.vulnhub.com/entry/metasploitable-2,29/)
+[Kali](https://www.kali.org/)
 
 # Proxmox Installation #
 
