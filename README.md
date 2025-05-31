@@ -165,7 +165,7 @@ It should look like this,
 Well now here we are, What is the point of having a splash page if we don't have anything to display?
 So I started with
 
-![Pi Hole](https://pi-hole.net/)
+[Pi Hole](https://community-scripts.github.io/ProxmoxVE/scripts?id=pihole)
 
 Which luckily, the proxmox VE Helper-scripts already has the script to make a pi hole LXC. Neat.
 
