@@ -34,7 +34,7 @@
 --- 
 
 # Proxmox Installation #
-
+<details>
 First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
 
 ![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
@@ -43,15 +43,11 @@ First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at t
 the first option is Proxmox VE Installer. It is the one we will be choosing. 
 But Keep in mind the Proxmox Backup Server ISO. I think we will be using it later.
 
-
-<details>
 ![Proxmox Choices](https://github.com/user-attachments/assets/156fc1d8-7735-4673-ad32-3ddab235f6e3)
-</details>
 
 You can choose direct download or torrent. 
 
-While that starts downloading, lets go to 
-[balenaEtcher](https://etcher.balena.io/)
+While that starts downloading, lets go to [balenaEtcher](https://etcher.balena.io/)
 and there is a link right in the middle of the screen to "Download Etcher"
 
 ![balenaEtcher page](https://github.com/user-attachments/assets/c9800da4-784d-461c-bced-2f0a85f7a97c)
@@ -72,6 +68,7 @@ When it is finished, your computer may give you an error that says that the flas
 is unuasable. Which makes sense. We just made a bootable media. an installation disk if you will.
 Eject it from your pc and grab your secondary PC that will be made into the Proxmox box.
 
+</details>
 
 ## The Process ##
 First thing is first. Proxmox does not have a GUI. 
