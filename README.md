@@ -3,7 +3,7 @@
 
 ---
 
-# Hardware Requirements #
+## Hardware Requirements ##
 *This is just a guide that I will be documenting as we go forward.*
 
 ## I'll be updating this list as things go along ##
@@ -45,7 +45,7 @@
 
 --- 
 
-# Proxmox Installation #
+## Proxmox Installation ##
 <details>
       <summary> Proxmox Installation </summary>
 First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
@@ -189,6 +189,7 @@ It should look like this,
 </details>
 
 ---
+
 ## Pi Hole ##
 
 <details>
@@ -216,6 +217,8 @@ This is the pi hole list I used
 
 
 </details>
+
+---
 
 - Hardening
 - Firewall
