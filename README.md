@@ -158,6 +158,17 @@ It should look like this,
 
 ![Heimdall Splash Page](https://github.com/user-attachments/assets/d309c634-f3d4-40c7-b8bb-eacf9700ccef)
 
+Well now here we are, What is the point of having a splash page if we don't have anything to display?
+So I started with
+
+![Pi Hole](https://community-scripts.github.io/ProxmoxVE/scripts?id=pihole)
+![Pi Hole](https://github.com/user-attachments/assets/53ab4044-b11f-45ac-b978-37812f78f2f3)
+
+Follow the same steps as we did above and use the shell on the pve node of your proxmox page
+![Pi Hole Proxmox](https://github.com/user-attachments/assets/488dccdf-8ac5-430e-a764-0f716d04e669)
+
+After clicking the Shell go ahead and punch in that
+            bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pihole.sh)"
 
 
 
