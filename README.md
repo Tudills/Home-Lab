@@ -4,20 +4,26 @@
 ---
 
 # Hardware Requirements #
-** This is just a guide that I will be documenting as we go forward. **
+*This is just a guide that I will be documenting as we go forward.*
 
 ## I'll be updating this list as things go along ##
+
+<details>
+      <summary> Required Hardware </summary>
 - A Laptop, Desktop... your primary computuing device.
 - A secondary Computer. This could be an old desktop, A mini PC, or a Raspberry Pi, etc.
 - A networking Switch or a way to have multiple connections to ensure that your computer is networked to what will be your proxmox box.
 - A Flash drive, I'd suggest something along the lines of 8 GB
+</details>
 
 ## Somethings to note before you get anything started ##
+<details>
 * So as a practical application of understanding how virtualization works, take a note of what your proxmox Specifications are,
 * How many cores can the CPU utilize? What is the amount of RAM the computer has in it. What is the size of the harddrive.
 * Additionally what are the speeds of each of those devices?
 * While containers do end up being a very effective way to cap the amount of resources a certain application can use
 * You might start to see these applications add up very quickly.
+</details>
 
 <details>
 <summary> Main Sources </summary>
