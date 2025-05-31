@@ -10,19 +10,25 @@
 
 <details>
       <summary> Required Hardware </summary>
+      
 - A Laptop, Desktop... your primary computuing device.
 - A secondary Computer. This could be an old desktop, A mini PC, or a Raspberry Pi, etc.
 - A networking Switch or a way to have multiple connections to ensure that your computer is networked to what will be your proxmox box.
 - A Flash drive, I'd suggest something along the lines of 8 GB
+
 </details>
 
 ## Somethings to note before you get anything started ##
+
 <details>
-* So as a practical application of understanding how virtualization works, take a note of what your proxmox Specifications are,
-* How many cores can the CPU utilize? What is the amount of RAM the computer has in it. What is the size of the harddrive.
-* Additionally what are the speeds of each of those devices?
-* While containers do end up being a very effective way to cap the amount of resources a certain application can use
-* You might start to see these applications add up very quickly.
+      <summary> Just things to consider while building </summary>
+      
+- So as a practical application of understanding how virtualization works, take a note of what your proxmox Specifications are,
+- How many cores can the CPU utilize? What is the amount of RAM the computer has in it. What is the size of the harddrive.
+- Additionally what are the speeds of each of those devices?
+- While containers do end up being a very effective way to cap the amount of resources a certain application can use
+- You might start to see these applications add up very quickly.
+
 </details>
 
 <details>
@@ -183,7 +189,10 @@ It should look like this,
 </details>
 
 ---
+## Pi Hole ##
 
+<details>
+      <summary> Setting Up Pihole </summary>
 Well now here we are, What is the point of having a splash page if we don't have anything to display?
 So I started with
 
@@ -201,7 +210,12 @@ After clicking the Shell go ahead and punch in that
             
             bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pihole.sh)"
 
+This is the pi hole list I used
+[Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
+![pihole](https://github.com/user-attachments/assets/9365f449-d2a8-4f14-9a04-578dba1ddb91)
 
+
+</details>
 
 - Hardening
 - Firewall
