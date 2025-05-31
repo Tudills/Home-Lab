@@ -18,19 +18,23 @@
 * While containers do end up being a very effective way to cap the amount of resources a certain application can use
 * You might start to see these applications add up very quickly.
 
-Main Sources:
+<details>
+<summary> Main Sources: </summary>
+      ### Links
 - [Proxmox](https://proxmox.com/en/)
 - [balenaEtcher](https://etcher.balena.io/)
 - [Proxmox Scripts](https://community-scripts.github.io/ProxmoxVE/)
 - [Debian](https://www.debian.org/) 
 - [Metasploitable2](https://www.vulnhub.com/entry/metasploitable-2,29/)
-- [Kali](https://www.kali.org/)
+- [Kali](https://www.kali.org/)     
+</details>
+
+
+--- 
 
 # Proxmox Installation #
 
-First go to 
-[Proxmox](https://proxmox.com/en/)
-and click the downloads icon at the top of the page
+First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
 
 ![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
 
