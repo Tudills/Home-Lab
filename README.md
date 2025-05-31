@@ -37,12 +37,17 @@
 
 First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
 
+<details>
 ![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
+</details>
 
 the first option is Proxmox VE Installer. It is the one we will be choosing. 
 But Keep in mind the Proxmox Backup Server ISO. I think we will be using it later.
 
+
+<details>
 ![Proxmox Choices](https://github.com/user-attachments/assets/156fc1d8-7735-4673-ad32-3ddab235f6e3)
+</details>
 
 You can choose direct download or torrent. 
 
