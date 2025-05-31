@@ -38,7 +38,9 @@
 First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
 
 <details>
+      <summary>
 ![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
+      </summary>
 </details>
 
 the first option is Proxmox VE Installer. It is the one we will be choosing. 
