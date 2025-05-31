@@ -166,6 +166,7 @@ It should look like this,
 
 ![Heimdall Splash Page](https://github.com/user-attachments/assets/d309c634-f3d4-40c7-b8bb-eacf9700ccef)
 </details>
+
 ---
 
 Well now here we are, What is the point of having a splash page if we don't have anything to display?
