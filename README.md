@@ -99,6 +99,9 @@ When we click on that we will see an option to "Download from URL"
 
 As a decent starting point, we may as well grab a Debian 12 ISO Download
 </details>
+
+<details>
+      <summary> Setting up a Debian Box </summary>
 ## Starting out with Some OS's ##
 
 I went to [Debian](https://www.debian.org/) 
@@ -113,6 +116,7 @@ Remember that box from before? Now we have a url that we can paste into this box
 
 Now we can download straight from the source.
 
+</details>
 ---
 
 ## Making Some Containers; Heimdall ##
