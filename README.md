@@ -19,7 +19,7 @@
 * You might start to see these applications add up very quickly.
 
 <details>
-<summary> Main Sources: </summary>
+<summary> Main Sources </summary>
       
 - [Proxmox](https://proxmox.com/en/)
 - [balenaEtcher](https://etcher.balena.io/)
@@ -115,8 +115,9 @@ Now we can download straight from the source.
 
 ---
 
-## Making Some Containers ##
-
+## Making Some Containers; Heimdall ##
+<details>
+      <summary>Heimdall Setup and an Introduction to Proxmox Scripts</summary>
 Alright, so this is where things get pretty fun. There is an incredible resource. 
 
 [Proxmox Scripts](https://community-scripts.github.io/ProxmoxVE/)
@@ -164,7 +165,7 @@ Lets go to that IP Address
 It should look like this,
 
 ![Heimdall Splash Page](https://github.com/user-attachments/assets/d309c634-f3d4-40c7-b8bb-eacf9700ccef)
-
+</details>
 ---
 
 Well now here we are, What is the point of having a splash page if we don't have anything to display?
