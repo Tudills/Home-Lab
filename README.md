@@ -103,6 +103,7 @@ As a decent starting point, we may as well grab a Debian 12 ISO Download
 
 <details>
       <summary> Setting up a Debian Box </summary>
+      
 ## Starting out with Some OS's ##
 
 I went to [Debian](https://www.debian.org/) 
