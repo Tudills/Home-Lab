@@ -4,7 +4,8 @@
 ---
 
 # Hardware Requirements #
-## This is just a guide that I will be documenting as we go forward. ##
+** This is just a guide that I will be documenting as we go forward. **
+
 ## I'll be updating this list as things go along ##
 - A Laptop, Desktop... your primary computuing device.
 - A secondary Computer. This could be an old desktop, A mini PC, or a Raspberry Pi, etc.
@@ -30,7 +31,6 @@
 
 </details>
 
-
 --- 
 
 # Proxmox Installation #
@@ -39,7 +39,6 @@
 First go to [Proxmox](https://proxmox.com/en/) and click the downloads icon at the top of the page
 
 ![Proxmox dot com](https://github.com/user-attachments/assets/e4a6e957-7370-4755-bd3c-c60b2b572c8c)
-
 
 the first option is Proxmox VE Installer. It is the one we will be choosing. 
 But Keep in mind the Proxmox Backup Server ISO. I think we will be using it later.
@@ -100,6 +99,8 @@ When we click on that we will see an option to "Download from URL"
 As a decent starting point, we may as well grab a Debian 12 ISO Download
 </details>
 
+---
+
 <details>
       <summary> Setting up a Debian Box </summary>
 ## Starting out with Some OS's ##
@@ -117,11 +118,13 @@ Remember that box from before? Now we have a url that we can paste into this box
 Now we can download straight from the source.
 
 </details>
+
 ---
 
 ## Making Some Containers; Heimdall ##
+
 <details>
-      <summary>Heimdall Setup and an Introduction to Proxmox Scripts</summary>
+      <summary> Heimdall Setup and an Introduction to Proxmox Scripts </summary>
 Alright, so this is where things get pretty fun. There is an incredible resource. 
 
 [Proxmox Scripts](https://community-scripts.github.io/ProxmoxVE/)
@@ -169,6 +172,7 @@ Lets go to that IP Address
 It should look like this,
 
 ![Heimdall Splash Page](https://github.com/user-attachments/assets/d309c634-f3d4-40c7-b8bb-eacf9700ccef)
+
 </details>
 
 ---
