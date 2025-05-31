@@ -165,7 +165,7 @@ It should look like this,
 Well now here we are, What is the point of having a splash page if we don't have anything to display?
 So I started with
 
-![Pi Hole](h[ttps://community-scripts.github.io/ProxmoxVE/scripts?id=pihole](https://community-scripts.github.io/ProxmoxVE/scripts?id=pihole))
+![Pi Hole](https://community-scripts.github.io/ProxmoxVE/scripts?id=pihole)
 
 ![Pi Hole](https://github.com/user-attachments/assets/53ab4044-b11f-45ac-b978-37812f78f2f3)
 
