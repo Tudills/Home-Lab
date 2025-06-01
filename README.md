@@ -213,11 +213,60 @@ After clicking the Shell go ahead and punch in that
 
 This is the [Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) list I used
 ![pihole](https://github.com/user-attachments/assets/9365f449-d2a8-4f14-9a04-578dba1ddb91)
-
-
 </details>
 
 ---
+
+## Metasploitable2 ##
+<details>
+      <summary> Less Obvious Installations </summary>
+
+I wanted to provide an example of an instance where I had installed a virtual machine that was not from a template or a standard URL.
+      
+[metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2) is a box that is intentionally terrible and filled with vulnerabilities, I figured this 
+could kill two birds with one stone. One, set up a project that will allow me to have a Security punching bag, and to install
+something in a less conventional way.
+using this method we will not have to download from a URL, or use a script. Instead we will just be utilizing the proxmox shell to grab and establish everything
+we will need.
+
+While in shell the first thing we will need to type in is
+
+      wget https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip
+
+The Package will start to download and may take a moment or two. The next step will be to unzip the package.
+
+      unzip metasploitable-linux-2.0.0.zip
+
+It's possible especially if you have just been following what I have been doing, You actually don't have "unzip" installed.
+
+      apt-get install unzip
+
+This will obviously help extract the file. After the install, try the unzip command again.
+after it has extracted the file,
+
+      cd Metasploitable2-Linux/
+
+will bring us to the Metasploitable2 Directory. Which is where we will need to be to 
+
+      qemu-img convert -O qcow2 Metasploitable.vmdk metasploitable.qcow2
+
+Followed by 
+
+      qm create 300 --memory 2048 --cores 2 --name Metasploitable2 --net0 virtio,bridge=vmbr0 --boot c --bootdisk ide0
+
+ and then finally
+
+       qm importdisk 300 metasploitable.qcow2 local-lvm
+
+You'll notice that after this command, it will begin "transferring" which is another way of saying that it is creating the VM.
+
+and you should see after this, a new VM with the ID 300 named Metasploitable. There are a few things I want to do with this box 
+just for fun. But we will get to that later.
+
+</details>
+
+ 
+
 
 - Hardening
 - Firewall
