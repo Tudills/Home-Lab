@@ -211,8 +211,7 @@ After clicking the Shell go ahead and punch in that
             
             bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pihole.sh)"
 
-This is the pi hole list I used
-[Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
+This is the [Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) list I used
 ![pihole](https://github.com/user-attachments/assets/9365f449-d2a8-4f14-9a04-578dba1ddb91)
 
 
