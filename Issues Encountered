@@ -77,3 +77,10 @@ browser connection from a device on the same network. Which is why I picked a Ra
 I just had lying around. Additionally the racks that I bought came with a neat little PCB adapter 
 that make the Mini HDMI into a full size HDMI, so now I dont have to think about finding any of my 
 Mini HDMI cables. 
+
+---
+
+I tried to set up a streaming box type thing and used the ethernet from my lab.
+This apparently was a mistake. It's hard to judge what spot caused a major issue, 
+perhaps it was one of the DNS things I was also working on. I'm not sure. 
+But as a result, I chose to remake my entire lab after rebuilding my mesh network.
