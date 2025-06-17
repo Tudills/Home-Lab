@@ -129,6 +129,9 @@ Remember that box from before? Now we have a url that we can paste into this box
 ![Debian URL Query](https://github.com/user-attachments/assets/0643596c-9eaf-4a1c-babf-8db236dc576b)
 
 Now we can download straight from the source.
+I got these OS's as well
+- [Kali](https://www.kali.org/get-kali/#kali-installer-images)
+- [Linux Mint](https://linuxmint.com/edition.php?id=319)
 
 </details>
 
@@ -216,6 +219,16 @@ This is the [Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/m
 </details>
 
 ---
+
+## CasaOS ##
+<details>
+      <summary> A Linux "OS" as a Linux Container</summary>
+
+I just find this project interesting. It uses Docker which, Spoilers, Im going to download Docker at some point in here. But I think I will be using CasaOS as a hub of sorts if I can.
+
+within the shell of the pve node we will slap in the script from our trusty [VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=casaos)
+
+</details>
 
 ## Metasploitable2 ##
 <details>
