@@ -139,7 +139,8 @@ I got these OS's as well
 
 ## Creating Some Virtual Machines ##
 <details>
-      <summary> an example of installing a VM</summary>
+      <summary> an example of installing a VM </summary>
+      
 [Points of Interest](https://github.com/user-attachments/assets/83166f9d-5b6e-4725-9265-7dfb374bbb2b)
 
 Make sure the "pve" node is selected, and you should see on the right side of the browser, "create vm" and "create container"
@@ -156,6 +157,7 @@ on the next screen youll be able to select from ISOs, which is what we downloade
 ![Debian](https://github.com/user-attachments/assets/987e8ff5-58b9-4717-b7b4-7fbb8e4a197f)
 
 </details>
+
 ---
 
 ## Making Some Containers; Heimdall ##
