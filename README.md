@@ -239,6 +239,11 @@ After clicking the Shell go ahead and punch in that
 
 This is the [Pi hole list](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) list I used
 ![pihole](https://github.com/user-attachments/assets/9365f449-d2a8-4f14-9a04-578dba1ddb91)
+
+This next portion is a little bit more hands on on your part. You will have to use the ip of the pihole that you just set up, and set it as a DNS server within your router. 
+All routers are different so they all have to be configured differently. 
+in my case I had to set "192.168.5.90" as a secondary DNS server with my primary DNS server being "192.168.1.1" which was the default for my router
+
 </details>
 
 ---
